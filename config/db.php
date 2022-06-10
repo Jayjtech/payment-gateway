@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost", "root", "1234");
+$conn = mysqli_connect("localhost", "root", "");
 $query = "CREATE DATABASE IF NOT EXISTS my_lectures";
 
 $run = mysqli_query($conn,$query);
