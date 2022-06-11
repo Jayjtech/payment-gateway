@@ -1,11 +1,11 @@
 <?php
-$conn = mysqli_connect("localhost", "root", "1234");
+$conn = mysqli_connect("localhost", "root", "");
 $query = "CREATE DATABASE IF NOT EXISTS myapp";
 
 $run = mysqli_query($conn,$query);
 
 if($run){
-    $conn = mysqli_connect("localhost", "root", "1234", "myapp");
+    $conn = mysqli_connect("localhost", "root", "", "myapp");
 }
 
 // $products = "CREATE TABLE IF NOT EXISTS `products` (
